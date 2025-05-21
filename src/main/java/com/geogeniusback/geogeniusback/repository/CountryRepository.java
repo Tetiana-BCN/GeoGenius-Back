@@ -6,9 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.geogeniusback.geogeniusback.model.Country;
 
-
-@Repository
 public interface CountryRepository extends JpaRepository<Country, Long> {
+    // Custom query method to find a country by its name
     Optional<Country> findByName(String name);
 }
-
