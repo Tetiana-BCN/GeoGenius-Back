@@ -1,6 +1,6 @@
 # GeoGenius 
 
-Este es el backend del proyecto **GeoGenius**, una aplicación de preguntas y respuestas sobre geografía construida con **Spring Boot**. 
+El proyecto **GeoGenius** es una aplicación de preguntas y respuestas sobre geografía construida con **Spring Boot**. 
 
 ## Requisitos Previos
 
