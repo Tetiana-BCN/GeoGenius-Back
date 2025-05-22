@@ -2,12 +2,23 @@ package com.geogeniusback.geogeniusback.dto;
 
 import java.util.List;
 
-public class QuestionDTO {
+public class QuizQuestionDTO {
     private String question;
     private List<String> options;
     private String correctAnswer;
 
-    
+    // Default constructor
+    public QuizQuestionDTO() {
+    }
+
+    // Constructor with parameters
+    public QuizQuestionDTO(String question, List<String> options, String correctAnswer) {
+        this.question = question;
+        this.options = options;
+        this.correctAnswer = correctAnswer;
+    }
+
+    // Getters and Setters
     public String getQuestion() {
         return question;
     }
@@ -30,5 +41,14 @@ public class QuestionDTO {
 
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+
+    @Override
+    public String toString() {
+        return "QuizQuestionDTO{" +
+                "question='" + question + '\'' +
+                ", options=" + options +
+                ", correctAnswer='" + correctAnswer + '\'' +
+                '}';
     }
 }

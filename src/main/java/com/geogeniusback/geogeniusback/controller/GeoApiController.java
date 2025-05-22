@@ -7,8 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.geogeniusback.geogeniusback.dto.QuizQuestionDTO;
 import com.geogeniusback.geogeniusback.model.Country;
-import com.geogeniusback.geogeniusback.model.QuizQuestion;
+
 import com.geogeniusback.geogeniusback.repository.CountryRepository;
 
 @RestController
@@ -18,7 +19,7 @@ public class GeoApiController {
     private CountryRepository countryRepository;
 
     @GetMapping("/api/geoApi/question")
-    public QuizQuestion getQuizQuestion() {
+    public QuizQuestionDTO getQuizQuestion() {
         // Fetch all countries and their capitals from the database
         List<Country> allCountries = countryRepository.findAll();
 
