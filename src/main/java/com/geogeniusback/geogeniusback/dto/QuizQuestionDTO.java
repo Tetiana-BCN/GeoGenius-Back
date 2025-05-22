@@ -7,18 +7,18 @@ public class QuizQuestionDTO {
     private List<String> options;
     private String correctAnswer;
 
-    // Default constructor
+    
     public QuizQuestionDTO() {
     }
 
-    // Constructor with parameters
+    
     public QuizQuestionDTO(String question, List<String> options, String correctAnswer) {
         this.question = question;
         this.options = options;
         this.correctAnswer = correctAnswer;
     }
 
-    // Getters and Setters
+    
     public String getQuestion() {
         return question;
     }
